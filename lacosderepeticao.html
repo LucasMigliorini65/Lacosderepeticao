@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lacos</title>
+    <script>
+    /* atividade 1
+    var v1 = parseFloat(prompt("Informe o primeiro valor: "))
+    var v2 = parseFloat(prompt("Informe o segundo valor: "))
+        while( v2 <= 0 ) {
+            var v2 = prompt("Por favor informe outro valor. Contando que não pode ser negativo nem 0: ")
+        }
+    var result = v1 / v2
+    alert("O resultado da divisão de v1 por v2 é: " + result)
+    document.write("O resultado da divisão de v1 por v2 é: " + result)
+    */
+    
+    /* atividade 2
+        for (  var c = 0 ; c > -1 && c < 31 ; c++  ) {
+         document.write (" Contagem regressiva " + c + "<br/>")       
+        }
+        document.write("Explosão!!!") */
+
+    /* atividade 3
+        for (var c = 10 ; c < 11 && c > -1; c-- ) {
+            document.write(" Contagem decrescente " + c + "<br/>")
+        } */
+
+     /* atividade 4
+     var acuml = 0
+       var rep = 0
+       for ( var dv = 15 ;  dv <= 100 ; dv++) {
+        acuml += dv;
+        rep += 1;
+       }
+       var media = acuml / rep
+       alert("A média te todos os números somado de 15 a 100 é: " + media) */
+
+       /* atividade 5
+       var v1 = parseInt(prompt( "Digite o primeiro valor: "))
+       var v2 = parseInt(prompt("Digite o segundo valor: "))
+       while( v2 < v1) { v2 = parseInt(prompt(" Informe um novo valor: ")) }
+       var acuml = 0 
+       var rep = 0
+       for( var dv = v1 ; dv <= v2 ; dv++ ) { 
+        acuml += dv 
+        rep += 1
+       }
+       var media = acuml / rep 
+       alert(" A média de todos os números entre o primeiro valor e o segundo valor é: " + media) */ 
+
+       /* atividade 6
+       var alunos = 0;
+       metodo()
+       function metodo() { 
+       var aprov = 9.5;
+       var nota1 =  parseFloat(prompt(" Digite a primeira nota: "));
+       var nota2 =  parseFloat(prompt(" Digite a segundo nota: "));
+       var media =  (nota1 + nota2) / 2;
+        if ( media >= aprov) { 
+        alert("Esse aluno passou de ano.");
+        alunos += 1;
+        }
+        else {
+            alert("Esse aluno não passou de ano.");
+        }
+        var pergunta = prompt(" Você deseja fazer a média de outro aluno? digite S para sim N para não:" );
+        while (pergunta == "S" ) { 
+         metodo()
+         } 
+       }
+            alert("Passaram " + alunos + " alunos"); */
+            
+            /* atividade 7
+            var n1 = parseFloat(prompt(" informe a peimeira nota: "));
+            while (n1 > 10 || n1 < 0 ) { n1 = parseFloat(prompt("Informe o valor só aceitamos valor de 0 a 10: "))}
+
+            var n2 = parseFloat(prompt(" informe a segunda nota: "))
+            while (n2 > 10 || n2 < 0 ) { n2 = parseFloat(prompt("Informe o valor só aceitamos valor de 0 a 10: "))}
+
+            var n3 = parseFloat(prompt(" informe a terceira nota: "))
+            while (n3 > 10 || n3 < 0 ) { n3 = parseFloat(prompt("Informe o valor só aceitamos valor de 0 a 10: "))}
+
+            var n4 = parseFloat(prompt(" informe a quarta nota: "))
+            while (n4 > 10 || n4 < 0 ) { n4 = parseFloat( prompt("Informe o valor só aceitamos valor de 0 a 10: "))}
+
+            var n5 = parseFloat(prompt(" informe a quinta nota: "))
+            while (n5 > 10 || n5 < 0 ) { n5 = parseFloat(prompt("Informe o valor só aceitamos valor de 0 a 10: "))}
+
+            var n6 = parseFloat(prompt(" informe a sexta nota: "))
+            while (n6 > 10 || n6 < 0 ) { n6 = parseFloat(prompt("Informe o valor só aceitamos valor de 0 a 10: "))}
+
+            var soma = n1 + n2 + n3 + n4 + n5 + n6
+            var media = soma / 6
+            alert(" A média é igual a  " + media) */
+
+            /* atividade 8
+            var n = parseFloat(prompt("Informe o valor de N: "))
+            while( n < 0) { n = parseFloat(prompt("Informe o valor de N tem que se maior que zero: "))}
+            document.write("Contagem até:" + n + "<br/>");
+
+            for ( var inicial = 1 ; inicial <= n ; inicial++ ) {
+                document.write(inicial + "<br/>") 
+            } */
+
+            /* atividade 9
+            document.write("Os 10 valores inteiros maiores que 100" + "<br/>");
+            for (var inicial = 100 ; inicial < 111 ; inicial++) {
+                document.write(inicial + "<br/>")
+            } */
+
+            /* atividade 10
+            var inicial = 0
+            var n = parseInt(prompt("Informe o valor de n: "))
+            while( n < 0) { 
+             n = parseInt(prompt("Informe o valor novamente apenas positivos: "))
+            }
+
+            for ( var inicial = 0 ; inicial <= n ; inicial++)  { 
+            tabuada()
+            } 
+
+             function tabuada() {
+                while (inicial < n) { 
+                    inicial++
+                    var final = 0
+                while (final < 10 ) { 
+                final++
+                var mult = inicial*final;
+                document.write( inicial  + " x "+ final + " = " + mult + "<br>")}
+                if (final = 10){
+                    document.write("<br>")
+                }
+                }
+            } */
+
+            
+           /* atividade 11 
+            var f = 0
+            var d = 0
+            var inicial = 0
+            while( inicial <= 10 ) {
+                var v = parseInt(prompt(" Informe um valor: "))
+                if ( v > 24 && v < 42) {
+                    d++
+                }
+                else {
+                    f++}
+                    inicial++
+            }
+            alert( d + " valores estão dentro dos parâmetros, " + f + " valores estão fora dos parâmetros!") */
+            
+
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>                                    
